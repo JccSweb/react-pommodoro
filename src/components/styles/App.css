@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --orange:#b03d32;
+  --salmon:#FFDDBC;
+}
+html,
+body {
+  background-color: var(--orange);
+  font-family: 'Raleway', sans-serif;
+}
+h1,h2,h3{
+    font-family: 'Libre Baskerville', serif;
+    color:var(--salmon)
+}
+.app {
+  min-height: 100vh;
+}
+/* conteudo */
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.notas-tarefas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.description {
+  width: 80%;
+  margin: auto;
+  line-height: 1.5;
+  color: var(--salmon);
+}
+.description h2, .description h3 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+
+.description p {
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--salmon);
+  line-height: 2;
+}
+ul, ol{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  list-style-position: inside;
+  font-weight: 900;
+  color: var(--salmon);
+}
+.description a{
+  color: var(--salmon);
+}
+
+.no-tomatos{
+  margin-top:30px;
+  color:var(--salmon);
+  text-align: center;
+}
+footer{
+  background-color: var(--salmon);
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--orange);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.min-heigh{
+  min-height: 90vh;
+}
+.all-history h2{
+  text-align: center;
+}
+@media only screen and (max-width: 720px) {
+  .notas-tarefas {
+    flex-direction: column;
+  }
+}
+.center{
+  text-align: center;
+}
