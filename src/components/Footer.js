@@ -5,7 +5,13 @@ const Footer = () => {
   ano = ano.getFullYear();
   return (
     <footer>
-      <p>Joaquim Saraiva {ano}</p>
+      <p>
+        {" "}
+        <a href="https://joaquimsaraiva.pt/" rel="noreferrer">
+          {" "}
+          Joaquim Saraiva - {ano}{" "}
+        </a>
+      </p>
     </footer>
   );
 };
